@@ -5,9 +5,9 @@ description: Query entrypoint for the local D:/OB/skills knowledge base. Use bef
 description_zh: D:/OB/skills 本機技能知識庫入口索引；依任務、工具、平台快速找到應讀取的 SKILL.md。
 ---
 # Skills 知識庫索引
-> 自動整理：2026-09-24 14:02  
+> 自動整理：2026-09-24 15:07  
 > 根目錄：`D:/OB/skills`  
-> 已索引：243 個頂層 `SKILL.md`
+> 已索引：244 個頂層 `SKILL.md`
 
 ## Agent 使用規則
 1. 先用本索引或 `_consolidation/SKILLS_CATALOG.json` 找候選 Skill。
@@ -23,7 +23,7 @@ description_zh: D:/OB/skills 本機技能知識庫入口索引；依任務、工
 
 ## 分類索引
 
-### AI / Agent / LLM / MCP（62）
+### AI / Agent / LLM / MCP（63）
 - [`anytxt-mcp-setup-and-content-search`](./anytxt-mcp-setup-and-content-search/SKILL.md) — 啟用並使用 AnyTXT Searcher 的本機 JsonRPC API 搭配 MCP server，做大量檔案的全文內容搜尋、片段擷取與 OCR，並注意 token/context 用量控管。當使用者裝有 AnyTXT Searcher（ATGUI.exe）且想對大量本機檔案做內容層級搜尋（不只是檔名）時使用。  `#claude` `#database` `#debug` `#documents` `#frontend-ui` `#knowledge-search` `#mcp` `#media` `#remote` `#setup-install` `#windows`
 - [`anytxt-ocr-image-to-text`](./anytxt-ocr-image-to-text/SKILL.md) — 使用 AnyTXT Searcher 內建離線 OCR 引擎，將圖片截圖辨識成文字，並將結果整理寫入 Obsidian 筆記庫（D:\OB\Inbox）。當使用者要求 OCR 一張/一批截圖、把截圖裡的文字抓出來、或要測試/驗證 AnyTXT OCR 功能時使用。  `#documents` `#knowledge-search` `#llm` `#mcp` `#media` `#obsidian` `#pi` `#setup-install` `#windows`
 - [`claude-cli`](./claude-cli/SKILL.md) — Invoke local Claude Code CLI from command line for executing tasks, API calls, or browser automation. Use when the user wants to leverage their locally installed Claude to perform actions.  `#browser` `#claude` `#ecp` `#line-cbm` `#mcp` `#remote` `#setup-install` `#windows`
@@ -73,6 +73,7 @@ description_zh: D:/OB/skills 本機技能知識庫入口索引；依任務、工
 - [`qwencloud-token-plan-custom-provider`](./qwencloud-token-plan-custom-provider/SKILL.md) — 把 QwenCloud Token Plan（sk-sp- 專用金鑰）接到 WorkBuddy、Cherry Studio、Chatbox 或其他 OpenAI 相容自訂提供商。用在：WorkBuddy「新增模型」不知填什麼、 測試連線出現「API Key 無效或沒有許可權訪問該模型」、誤把 sk-sp- 配到 dashscope-intl.aliyuncs.com、要選 qwen3.8-flash / qwen3.8-max、或要區分 Token Plan 與按需付費（sk- / sk-ws-）兩套完全不能混用的 endpoint。 不適用於本機自架 GGUF Qwen3.8-27B（見 qwen38-27b-llamacpp-omniroute）。  `#debug` `#frontend-ui` `#llm` `#setup-install` `#windows`
 - [`qwythos-27b-llamacpp-omniroute`](./qwythos-27b-llamacpp-omniroute/SKILL.md) — 在遠端 GPU 主機 10.145.119.19 用 llama.cpp Docker 跑 Qwythos-27B-v1（empero-ai，Qwen3.5-27B 底座的推理/agent模型），並接進本機 OmniRoute 的 OpenAI-compatible provider。用在：要啟動、檢查、重裝 Qwythos-27B，處理 llama.cpp port 8081，使用 OmniRoute model id `qwythos/models/Qwythos-27B-Q4_K_M.gguf`，或評估這顆模型的推理/寫程式/動手操作能力時。  `#docker` `#frontend-ui` `#llm` `#media` `#omniroute` `#pi` `#remote` `#setup-install` `#windows`
 - [`self-improve`](./self-improve/SKILL.md) — Autonomous evolutionary code improvement engine with tournament selection. NOT the same as `self-evolving` (a lightweight YAML mistake/optimization note log for opencode — no code execution, no git worktrees). This skill actually runs a full autonomous code-modification loop.  `#claude` `#knowledge-search` `#line-cbm` `#llm` `#opencode` `#setup-install` `#vrs-telephony`
+- [`skills-github-publish`](./skills-github-publish/SKILL.md) — 把 D:\OB\skills 技能庫發布到 GitHub：同步正式 private repo （HuangChienHsiung590902/pi-agent-skills），並為 CC Switch 等「匿名下載」的 skill manager 建立/更新 public mirror repo （HuangChienHsiung590902/pi-agent-skills-public），發布前自動消毒憑證。 當使用者說「把 skills 上傳/發布/同步到 GitHub」、「更新 public mirror」、 「CC Switch 識別到 0 個技能」、「技能儲存庫抓不到/下載失敗」、或想把技能庫 放進公開 repo 又怕洩憑證時使用。不用於：匯入單一外部 skill 進本機庫 （用 pi-install-skill-import）、或庫內結構稽核整理 （用 skills-library-conformance-maintenance）。  `#frontend-ui` `#line-cbm` `#pi` `#setup-install`
 - [`spark-x25-llamacpp-local`](./spark-x25-llamacpp-local/SKILL.md) — 在本機 D:\llama.cpp 或桌面獨立包 C:\Users\HCH\Desktop\spark-x2.5 用 XHToken/llama.cpp fork 跑 Spark-X2.5-4B GGUF（Intel Arc Vulkan 或 CPU），含 WebUI tools、stdio MCP（anytxt/es/llm-wiki/comfyui 生圖/comfyui-mcp 完整工具）、agents.md、網頁上傳圖片存檔後 AnyTXT OCR。用在：本機跑 Spark、桌面 spark-x2.5、Web UI 上傳圖片 OCR、Images require a vision-capable model、rebuild-spark-ocr-ui.bat、wiki 知識優先查、spark-mcp.json、start.bat、menu.ps1、spark2_5 不支援、讓本機 Spark 呼叫 ComfyUI 生圖、或不要覆蓋 ASR 舊 llama-server.exe 時。遠端 10.145.119.19 Docker Spark 生圖改用 spark-x25-docker-comfyui。  `#comfyui` `#gpu` `#llm` `#mcp` `#setup-install` `#windows`
 - [`statusline-setup`](./statusline-setup/SKILL.md) — Install the Claude Code dual-account status line on Windows — dual-account quota (remaining %), context bar, git info, and live MCP/Skill chips. Handles jq dependency, script placement, settings.json wiring, and second-account setup. The fixed, ready-to-use script is bundled in this skill.  `#claude` `#debug` `#frontend-ui` `#line-cbm` `#mcp` `#remote` `#setup-install` `#windows`
 - [`tauri-wiki-app`](./tauri-wiki-app/SKILL.md) — 管理「LLM Wiki」這款獨立安裝的 Tauri 桌面 wiki app(REST API port 19828)——查詢/新增/編輯 wiki 頁面、搜尋內容、取得知識圖譜、透過 `/chat` 的隱藏 `images` 欄位傳圖做 OCR/影像辨識、幫 bundled mcp-server 補圖片支援；也處理 OCR 報 `At most 0 image(s)`、401、看不到圖片。當使用者提到「查詢 wiki」「管理 wiki 頁面」「搜尋 wiki」「新增 wiki 條目」「llm wiki 專案」「llm wiki 傳圖」「llm wiki OCR」「llm wiki 看不到圖片」時使用。⚠️ 跟 OMC 內建的 `wiki` skill(讀寫 `.omc/wiki/*.md`)是完全不同的兩套系統，不要混淆。  `#claude` `#database` `#documents` `#frontend-ui` `#knowledge-search` `#llm` `#mcp` `#media` `#opencode` `#pi` `#remote` `#setup-install`

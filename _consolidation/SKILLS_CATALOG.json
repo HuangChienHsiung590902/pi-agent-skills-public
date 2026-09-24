@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-24 14:02",
+  "generated_at": "2026-09-24 15:07",
   "root": "D:/OB/skills",
-  "skill_count": 243,
+  "skill_count": 244,
   "skills": [
     {
       "id": "ai-learning-studio",
@@ -8752,6 +8752,38 @@
         "Rules and Limitations"
       ],
       "last_modified": "2026-09-24 13:19:08"
+    },
+    {
+      "id": "skills-github-publish",
+      "name": "skills-github-publish",
+      "path": "skills-github-publish/SKILL.md",
+      "directory": "skills-github-publish",
+      "description": "把 D:\\OB\\skills 技能庫發布到 GitHub：同步正式 private repo （HuangChienHsiung590902/pi-agent-skills），並為 CC Switch 等「匿名下載」的 skill manager 建立/更新 public mirror repo （HuangChienHsiung590902/pi-agent-skills-public），發布前自動消毒憑證。 當使用者說「把 skills 上傳/發布/同步到 GitHub」、「更新 public mirror」、 「CC Switch 識別到 0 個技能」、「技能儲存庫抓不到/下載失敗」、或想把技能庫 放進公開 repo 又怕洩憑證時使用。不用於：匯入單一外部 skill 進本機庫 （用 pi-install-skill-import）、或庫內結構稽核整理 （用 skills-library-conformance-maintenance）。",
+      "annotation": "把 D:\\OB\\skills 技能庫發布到 GitHub：同步正式 private repo （HuangChienHsiung590902/pi-agent-skills），並為 CC Switch 等「匿名下載」的 skill manager 建立/更新 public mirror repo （HuangChienHsiung590902/pi-agent-skills-public），發布前自動消毒憑證。 當使用者說「把 skills 上傳/發布/同步到 GitHub」、「更新 public mirror」、 「CC Switch 識別到 0 個技能」、「技能儲存庫抓不到/下載失敗」、或想把技能庫 放進公開 repo 又怕洩憑證時使用。不用於：匯入單一外部 skill 進本機庫 （用 pi-install-skill-import）、或庫內結構稽核整理 （用 skills-library-conformance-maintenance）。",
+      "category": "AI / Agent / LLM / MCP",
+      "tags": [
+        "frontend-ui",
+        "line-cbm",
+        "pi",
+        "setup-install"
+      ],
+      "headings": [
+        "Skills GitHub Publish & Public Mirror",
+        "When to Use",
+        "Inputs and Outputs",
+        "Inputs",
+        "Outputs",
+        "Procedure",
+        "Phase 0：狀態確認",
+        "Phase 1：同步正式 private repo",
+        "Phase 2：重建 public mirror",
+        "Phase 3：匿名驗證",
+        "Phase 4：用戶端設定（CC Switch）",
+        "Rules and Limitations",
+        "Pitfalls",
+        "Verification"
+      ],
+      "last_modified": "2026-09-24 15:02:02"
     },
     {
       "id": "skills-library-conformance-maintenance",

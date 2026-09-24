@@ -188,6 +188,7 @@ D:/OB/skills/self-improve/SKILL.md
 D:/OB/skills/sfaa-room-monitor-remote-control/SKILL.md
 D:/OB/skills/skill-creator/SKILL.md
 D:/OB/skills/skill-update/SKILL.md
+D:/OB/skills/skills-github-publish/SKILL.md
 D:/OB/skills/skills-library-conformance-maintenance/SKILL.md
 D:/OB/skills/skills-openjev-routing/SKILL.md
 D:/OB/skills/spark-x25-docker-comfyui/SKILL.md
