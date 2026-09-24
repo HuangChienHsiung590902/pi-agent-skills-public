@@ -199,7 +199,7 @@ const String mcpAuthToken = '<KB_BEARER_TOKEN>';
 Authentication accepts either:
 
 - Header form for normal clients:
-  `Authorization: Bearer <KB_BEARER_TOKEN>...` style, specifically
+  `Authorization: Bearer <BEARER_TOKEN>` style, specifically
   `Bearer <KB_BEARER_TOKEN>`.
 - **Path-token form** for ChatGPT connectors, because the ChatGPT connector
   UI only offered `OAuth` / `無驗證` / `混合` and had no custom bearer-header

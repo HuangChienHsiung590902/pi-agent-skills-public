@@ -883,7 +883,7 @@ browser_run_code(code="async (page) => {
     accounts.filter(a => a.success).map(account =>
       post('Qs.Account.modifyPassword.data', {
         accountId: account.accountId,
-        newPassword: 'Pass1234',
+        newPassword=<PASSWORD_PLACEHOLDER>,
         requireOldPassword: false
       })
     )

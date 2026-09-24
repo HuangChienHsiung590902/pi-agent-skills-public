@@ -16,7 +16,7 @@ argument-hint: "ssh <user>@<host> pwd:<password> [command]"
 使用者給這種格式時：
 
 ```text
-ssh administrator@192.168.100.110 pwd:<SSH_PASSWORD>
+ssh administrator@192.168.100.110 pwd:<USB_ACCOUNT_PASSWORD>
 ```
 
 不要把它當成真正 shell 指令直接丟給 `ssh`。OpenSSH 沒有 `pwd:` 這個語法，而且 Claude Code 的非互動工具不能穩定回答密碼提示。
